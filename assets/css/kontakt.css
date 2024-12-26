@@ -1,0 +1,96 @@
+.kontakt {
+    max-width: 800px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: var(--card-background);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.15);
+    border: 1px solid var(--gray);
+    transition: all 0.3s ease;
+}
+
+.kontakt:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(108, 99, 255, 0.25);
+    border-color: var(--primary);
+}
+
+.kontakt h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.kontakt form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.kontakt form label {
+    font-weight: 500;
+    color: var(--text);
+    font-size: 1.1rem;
+}
+
+.kontakt form input,
+.kontakt form textarea {
+    padding: 15px;
+    border: 2px solid var(--gray);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    background-color: var(--background);
+}
+
+.kontakt form input:focus,
+.kontakt form textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
+    outline: none;
+}
+
+.kontakt form button {
+    background: var(--primary);
+    color: white;
+    font-weight: 500;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.kontakt form button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}
+
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid var(--gray-light);
+}
+
+.contact-info p {
+    color: var(--text);
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.kontakt form textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}

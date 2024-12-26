@@ -1,0 +1,85 @@
+.faq {
+    margin-top: 50px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: var(--gray);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.faq-item {
+    background: var(--card-background);
+    width: 100%;
+    border: none;
+}
+
+.faq-toggle {
+    display: none;
+}
+
+.faq-label {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-label:hover {
+    background-color: var(--gray-light);
+}
+
+.faq-label::after {
+    content: "▼";
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 30px;
+    color: var(--text);
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.faq-toggle:checked + .faq-label {
+    background-color: var(--gray-light);
+}
+
+.faq-toggle:checked + .faq-label::after {
+    content: "▲";
+}
+
+.faq-toggle:checked ~ .faq-content {
+    max-height: 500px;
+    padding: 0 30px 20px;
+}
+
+@media (max-width: 768px) {
+    .faq {
+        margin: 30px auto;
+    }
+
+    .faq h2 {
+        font-size: 2rem;
+    }
+}

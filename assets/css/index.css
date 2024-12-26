@@ -1,0 +1,47 @@
+:root {
+    --primary: #6C63FF;
+    --primary-dark: #5A52D5;
+    --text: #2D2D2D;
+    --background: #F0F2F5;
+    --gray-light: #F5F5F5;
+    --gray: #E0E0E0;
+    --card-shadow: rgba(108, 99, 255, 0.15);
+    --card-background: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--background);
+    min-height: 100vh;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+a {
+    cursor: pointer;
+}
+
+.ticket-button,
+.faq-button,
+.nav-links a,
+.footer-links a,
+.social-icons a {
+    cursor: pointer;
+}

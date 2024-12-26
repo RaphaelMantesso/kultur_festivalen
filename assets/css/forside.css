@@ -1,0 +1,41 @@
+.forside {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/festival-banner.png') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 200px 20px;
+    overflow: hidden;
+}
+
+.forside h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.forside p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.forside button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.forside button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}

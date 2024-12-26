@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kulturfestival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/section.css" />
+    <link rel="stylesheet" href="assets/css/forside.css" />
+    <link rel="stylesheet" href="assets/css/program.css" />
+    <link rel="stylesheet" href="assets/css/billetter.css" />
+    <link rel="stylesheet" href="assets/css/kontakt.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/index.html" class="logo">
+          <div>Kulturfestival</div>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-links">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="billetter.html">Billetter</a></li>
+          <li><a href="kontakt.html">Kontakt oss</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="forside" class="forside">
+      <div class="intro">
+        <h1>Velkommen til Kulturfestivalen</h1>
+        <p>Opplev årets store kulturelle høydepunkt!</p>
+        <a href="/program.html">
+          <button>Se Programmet</button>
+        </a>
+      </div>
+    </section>
+
+    <section id="program" class="program">
+      <h2>Program</h2>
+      <div class="events">
+        <div class="event">
+          <h3>Musikkfest</h3>
+          <p><span class="event-label">Dato:</span> 01. januar 2025</p>
+          <p><span class="event-label">Klokkeslett:</span> 13:00</p>
+          <p><span class="event-label">Sted:</span> Utstillingshallen</p>
+          <a href="/program.html" class="event-button">Les mer</a>
+        </div>
+        <div class="event">
+          <h3>Kunstutstilling</h3>
+          <p><span class="event-label">Dato:</span> 02. januar 2025</p>
+          <p><span class="event-label">Klokkeslett:</span> 14:00</p>
+          <p><span class="event-label">Sted:</span> Utstillinghallen</p>
+          <a href="/program.html" class="event-button">Les mer</a>
+        </div>
+        <div class="event">
+          <h3>Teater</h3>
+          <p><span class="event-label">Dato:</span> 03. januar 2025</p>
+          <p><span class="event-label">Klokkeslett:</span> 15:00</p>
+          <p><span class="event-label">Sted:</span> Utstillinghallen</p>
+          <a href="/program.html" class="event-button">Les mer</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="billetter" class="billetter">
+      <h2>Billetter</h2>
+      <div class="ticket-options">
+        <div class="ticket-container">
+          <h3>Dagspass</h3>
+          <p>Pris: 500 nok</p>
+          <a href="/billetter.html" class="ticket-button">Kjøp nå</a>
+        </div>
+
+        <div class="ticket-container">
+          <h3>Helgepass</h3>
+          <p>Pris: 1000 nok</p>
+          <a href="/billetter.html" class="ticket-button">Kjøp nå</a>
+        </div>
+
+        <div class="ticket-container">
+          <h3>Familiepakke</h3>
+          <p>Pris: 1500 nok</p>
+          <a href="/billetter.html" class="ticket-button">Kjøp nå</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="kontakt">
+      <h2>Kontakt oss</h2>
+      <form>
+        <label for="name">Navn:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Melding:</label>
+        <textarea name="message" id="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="contact-info">
+        <p>Telefon: +47 123 45 678</p>
+        <p>E-post: kontakt@kulturfestival.no</p>
+      </div>
+    </section>
+
+    <div class="spacer"></div>
+    <footer>
+      <div class="sosiale-medier">
+        <h3>Følg oss på sosiale medier</h3>
+        <ul class="social-icons">
+          <li>
+            <a href="https://facebook.com" target="_blank">
+              <img src="assets/images/facebook.svg" alt="Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank">
+              <img src="assets/images/instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://tiktok.com" target="_blank">
+              <img src="assets/images/tiktok.svg" alt="TikTok" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="billetter.html">Billetter</a></li>
+        <li><a href="kontakt.html">Kontakt oss</a></li>
+        <li><a href="billetter.html#faq">FAQs</a></li>
+      </ul>
+      <p>© 2024 Kulturfestivalen. Alle rettigheter forbeholdt.</p>
+    </footer>
+  </body>
+</html>
